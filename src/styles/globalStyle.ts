@@ -16,7 +16,7 @@ export default createGlobalStyle`
     --normal-font-size: 1.2rem;
     --h1-font-size: 2rem;
     --h2-font-size: 2rem;
-    --bigest-font-size: 3.5rem;
+    --bigest-font-size: 3rem;
     --border: 0.5rem;
   }
 

@@ -22,6 +22,7 @@ export const Navegation = styled.nav`
   width: max-content;
   height: calc(var(--header-height) + 1rem);
   display: flex;
+  padding: 1.5rem 0px;
   align-items: center;
   gap: 5rem;
   ul {
