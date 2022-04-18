@@ -1,10 +1,15 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 
 import { Wrapper } from './styles';
 interface GlobalSectionProps {
-  children?: React.ReactChild;
-  id?: string;
+  children?: any;
+  idSection?: string;
+  dark: boolean;
 }
-export const GlobalSection: FunctionComponent = ({ id, children }: GlobalSectionProps) => {
-  return <Wrapper id={id ? id : ''}>{children}</Wrapper>;
+export const GlobalSection = ({ idSection, children, dark }: GlobalSectionProps) => {
+  return (
+    <Wrapper dark={dark} id={idSection ? idSection : ''}>
+      {children}
+    </Wrapper>
+  );
 };
