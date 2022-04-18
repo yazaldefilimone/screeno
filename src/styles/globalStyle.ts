@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   :root {
@@ -7,6 +7,7 @@ export default createGlobalStyle`
     --dark-color: #111;
     --body-font: "Poppins", Arial, sans-serif;
     --gray-color:#ccc;
+    --header-height:3rem;
 
     --blod: bolder;
     --semi: bold;
