@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { GlobalContainer } from '../GlobalContainer';
 
-import { Container } from './styles';
+import { Container, Navegation, Menu } from './styles';
 
 export const Header: FunctionComponent = () => {
   const links = ['exemplets', 'pricing', 'about'];
@@ -10,10 +10,10 @@ export const Header: FunctionComponent = () => {
     <Container>
       <GlobalContainer>
         <a href="#">
-          Scr<span>ee</span>no
+          scr<span>ee</span>no
         </a>
 
-        <nav>
+        <Navegation>
           <ul>
             {links.map((link) => (
               <li>
@@ -26,10 +26,10 @@ export const Header: FunctionComponent = () => {
             <a href="#login">login</a>
             <a href="#start">Start free Trail</a>
           </div>
-        </nav>
-        <div>
+        </Navegation>
+        <Menu>
           <span></span>
-        </div>
+        </Menu>
       </GlobalContainer>
     </Container>
   );
