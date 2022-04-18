@@ -52,20 +52,24 @@ export const Exemplets: FunctionComponent = () => {
             <h2>All-in-One platform</h2>
             <p>You take care of the video quality and we take care of everything else</p>
             <div>
-              <a href="#start">Start free Trail</a>
-              <a href="#login">login</a>
+              <div>
+                <a href="#start">Start free Trail</a>
+                <a href="#login">login</a>
+              </div>
             </div>
           </ExempletsContent>
           <ExempletsData>
-            {data.map((item) => (
-              <div>
-                <h3>
-                  <img src={item.icon} alt="icon" />
-                  {item.title}
-                </h3>
-                <p>{item.desc}</p>
-              </div>
-            ))}
+            <div>
+              {data.map((item) => (
+                <div>
+                  <h3>
+                    <img src={item.icon} alt="icon" />
+                    {item.title}
+                  </h3>
+                  <p>{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </ExempletsData>
         </ExempletsContainer>
       </GlobalContainer>
