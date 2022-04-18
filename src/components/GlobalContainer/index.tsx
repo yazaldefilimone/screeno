@@ -2,9 +2,9 @@ import React, { FunctionComponent } from 'react';
 
 import { Wrapper } from './styles';
 interface GlobalContainerProps {
-  children?: React.ReactChild;
+  children?: any;
 }
 
-export const GlobalContainer: FunctionComponent = ({ children }: GlobalContainerProps) => {
+export const GlobalContainer = ({ children }: GlobalContainerProps) => {
   return <Wrapper> {children} </Wrapper>;
 };
