@@ -39,7 +39,7 @@ export const Exemplets: FunctionComponent = () => {
       desc: 'Know what your audience likes & how your content is performing.',
     },
     {
-      icon: icon1,
+      icon: icon6,
       title: 'For all devices',
       desc: 'Get organized on all devices',
     },
