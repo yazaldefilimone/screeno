@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   :root {
     --frist-color: #006AFF;
+    --frist-color-alt:rgba(0, 106, 255, 0.1);
     --white-color: #fff;
     --dark-color: #111;
     --body-font: "Poppins", Arial, sans-serif;
