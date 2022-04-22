@@ -12,24 +12,27 @@ export const PricingContent = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   place-items: center;
-  div:first-child {
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+`;
+
+export const PricingContentText = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 40ch;
+  }
+  a {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 1rem;
-    h3 {
-      font-weight: 600;
-      font-size: 1.8rem;
-    }
-    p {
-      font-size: 1rem;
-      font-weight: 400;
-      max-width: 40ch;
-    }
-    a {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
   }
 `;
 export const PricingData = styled.div`
@@ -56,8 +59,8 @@ export const PricingData = styled.div`
         display: flex;
         align-items: center;
         gap: 2rem;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
         background: rgba(204, 204, 204, 0.238);
         font-size: 0.998rem;
         font-weight: bold;
@@ -69,6 +72,41 @@ export const PricingData = styled.div`
     }
   }
   img {
+    weight: 100%;
+    border-radius: 1.5rem;
+  }
+`;
+
+export const PricingData2 = styled.div`
+  position: relative;
+  > div {
+    top: -1rem;
+    right: -1rem;
+    position: absolute;
+    background: var(--white-color);
+    color: var(--dark-color);
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    span {
+      top: 0rem;
+      right: 0rem;
+      position: absolute;
+      background: var(--frist-color);
+      color: var(--white-color);
+      border-radius: 50%;
+      height: 1rem;
+      width: 1rem;
+      display: flex;
+      font-size: 0.5rem;
+      align-items: center;
+      font-weight: 600;
+      justify-content: center;
+    }
+    img {
+      width: 2rem;
+    }
+  }
+  > img {
     weight: 100%;
     border-radius: 1.5rem;
   }
