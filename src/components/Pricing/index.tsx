@@ -2,8 +2,9 @@ import React, { FunctionComponent } from 'react';
 import { GlobalSection } from '../GblobalSection';
 import { GlobalContainer } from '../GlobalContainer';
 
-import { PricingContainer, PricingContent, PricingData, PricingData2, PricingContentText } from './styles';
+import { StartingImg, PricingContainer, PricingContent, PricingData, PricingData2, PricingContentText, Starting } from './styles';
 import pricingBg from '../../assets/img/bg2.jpg';
+import startingBg from '../../assets/img/frame2.svg';
 import pricingBg2 from '../../assets/img/bg3.jpg';
 import emailSvg from '../../assets/icons/vector-email-dark.svg';
 import icon from '../../assets/icons/arrow.svg';
@@ -77,6 +78,23 @@ export const Pricing: FunctionComponent = () => {
               </a>
             </PricingContentText>
           </PricingContent>
+
+          <Starting>
+            <div>
+              <h2>Start your own business today</h2>
+              <p>consistent quality and experience across all platforms and devices</p>
+            </div>
+
+            <div>
+              <a href="#start">Start free Trail</a>
+              <a href="#login">login</a>
+            </div>
+
+            <StartingImg img={startingBg}>
+              <img src={startingBg} alt="" />
+              <div></div>
+            </StartingImg>
+          </Starting>
         </PricingContainer>
       </GlobalContainer>
     </GlobalSection>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PricingContainer = styled.div`
-  h2 {
+  > h2 {
     text-align: center;
     font-size: var(--h1-font-size);
     margin-bottom: 4rem;
@@ -110,4 +110,60 @@ export const PricingData2 = styled.div`
     weight: 100%;
     border-radius: 1.5rem;
   }
+`;
+export const StartingImg: any = styled.div`
+  position: relative;
+  max-width: 700px;
+  margin: 0px auto;
+  img {
+    width: 100%;
+  }
+  div {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: -4rem;
+    left: 2rem;
+    border-radius: 1rem;
+    background-image: url(${(props: any) => (props.img ? props.img : '')});
+    background-position: 33%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid var(--white-color);
+  }
+`;
+export const Starting = styled.div`
+  display:flex;
+  flex-direction:column;
+  gap:4rem;
+  > div:first-child{
+    h2 {
+      text-align: center;
+      font-size: var(--h1-font-size);
+    }
+    p{
+      text-align: center;
+
+    }
+  }
+ 
+  > div:nth-child(2){
+    max-width:max-content;
+    margin:0px auto;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      a {
+        padding: 0.6rem 1.4rem;
+        border-radius: 1rem;
+        width: 160px;
+        text-align: center;
+        &:first-child {
+          background: var(--white-color);
+          color: var(--dark-color);
+        }
+        &:last-child {
+          border: 1px solid var(--white-color);
+        }
+      }
 `;
