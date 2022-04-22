@@ -6,6 +6,7 @@ export const PricingContainer = styled.div`
     font-size: var(--h1-font-size);
     margin-bottom: 4rem;
   }
+  padding: 5rem 0px;
 `;
 export const PricingContent = styled.div`
   display: grid;
