@@ -4,6 +4,9 @@ export const Wrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: auto;
+  }
   gap: 2rem;
   place-items: center;
 `;
@@ -66,6 +69,10 @@ export const HomeData: any = styled.div`
     div {
       width: 200px;
       height: 300px;
+      @media screen and (max-width: 1000px) {
+        width: 150px;
+        height: 230px;
+      }
       position: absolute;
       bottom: -4rem;
       left: 2rem;
@@ -83,6 +90,7 @@ export const WrapperContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-rows: auto max-content;
+
   gap: 4rem;
 `;
 export const Company = styled.div`
@@ -90,6 +98,11 @@ export const Company = styled.div`
   ul {
     display: flex;
     align-items: center;
+    /* flex-wrap: wrap; */
+    @media screen and (max-width: 1000px) {
+      justify-content: static;
+      gap: 0.5rem;
+    }
     justify-content: space-around;
     li {
       cursor: pointer;

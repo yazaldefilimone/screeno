@@ -49,6 +49,9 @@ export const ExempletsData = styled.section`
   > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     gap: 4rem;
     div {
       display: flex;

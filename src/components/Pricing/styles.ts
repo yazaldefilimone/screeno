@@ -11,6 +11,10 @@ export const PricingContainer = styled.div`
 export const PricingContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: auto;
+  }
+
   gap: 5rem;
   place-items: center;
   margin-bottom: 10rem;
@@ -50,17 +54,24 @@ export const PricingData = styled.div`
     background: var(--white-color);
     border-radius: 1.5rem;
     color: var(--dark-color);
+    @media screen and (max-width: 1000px) {
+      padding: 1rem;
+    }
     ul {
       display: flex;
       flex-direction: column;
       gap: 1rem;
       weight: 100%;
       height: 100%;
+
       li {
         display: flex;
         align-items: center;
         gap: 2rem;
         padding: 1rem;
+        @media screen and (max-width: 1000px) {
+          padding: 0.5rem;
+        }
         border-radius: 1rem;
         background: rgba(204, 204, 204, 0.238);
         font-size: 0.998rem;
@@ -122,6 +133,11 @@ export const StartingImg: any = styled.div`
   div {
     width: 200px;
     height: 300px;
+    @media screen and (max-width: 1000px) {
+      width: 150px;
+      height: 230px;
+      left: 0.5rem;
+    }
     position: absolute;
     bottom: -4rem;
     left: 2rem;

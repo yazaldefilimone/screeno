@@ -34,6 +34,9 @@ export const Navegation = styled.nav`
   }
 
   div {
+    @media screen and (max-width: 1153px) {
+      display: none;
+    }
     display: flex;
     align-items: center;
     gap: 2rem;
